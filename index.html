@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Influence Award'23</title>
+    <link rel="icon" href="ovigologo.jpg" type="image/png" sizes="16x16 32x32">
+
+</head>
+
+<body>
+    <div class="navbar background-image">
+
+        <a href="index.html">
+            <img src="Ovigo-Final-Logofdgf.png" alt="Logo" class="logo">
+        </a>
+        <div class="nav-options">
+            <a href="#" class="nav-option">Register</a>
+            <a href="#l" class="nav-option">Vote</a>
+            <a href="#" class="nav-option">About</a>
+            <a href="#" class="nav-option">Award Categories</a>
+            <a href="#" class="nav-option">Jury</a>
+            <a href="#" class="nav-option">Schedule</a>
+        </div>
+    </div>
+    <!---- <div class="image-container">
+        <img src="back.jpg" alt="Background Image" class="background-image">
+        <img src="award-logo-04.png" alt="Centered Image" class="centered-image">
+    </div> -->
+
+    <div class="countdown background-image">
+
+        <img src="award-logo-04.png" alt="Centered Image" class="centered-image">
+
+        <p1>27th September 2023 </p1><br>
+        <p2>Explore the endless smart tourism</p2><br>
+
+        <p3>Submission ending in</p3>
+
+        <div class="countdown-timer" id="timer">
+
+            <div class="countdown-item">
+                <div class="countdown-value" id="days">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-value" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+        <button id="submitNominationButton" onclick="redirectToNominationPage()">Submit Nomination</button>
+    </div>
+    <div class="award-categories">
+        <h2>
+            <span style="font-size: 28px; color: black;">Travel Influencer Awards 23</span> </h2>
+        <p>
+
+
+            <div class="sub-sections">
+                <div class="sub-section">
+                    <h3>
+                        <span style="font-size: 28px; color: black;">About</span>
+
+                        <span style="font-size: 28px; color: rgb(248,176,21);">Award</span>
+
+                    </h3>
+                    <p id="about-award-summary">
+                        Travel Influencer Awards 23 is Ovigo's flagship award program under the mega campaign Dekhi Banglar Rup....
+                    </p>
+                    <p id="about-award-full" class="hidden">
+                        <!-- Display the full content here -->
+                        Travel Influencer Awards 23 is Ovigo's flagship award program under the mega campaign Dekhi Banglar Rup. The 'Travel Influencer Award' goes to those who influence people to explore beautiful Bangladesh and who work to develop the tourism and hospitality
+                        services of Bangladesh. This award will be given 60 awards in a total of 60 different categories under the prime 5 categories namely Creative Hero ( Travel Content), Travelers Icon (Influencer Travelers), Best in Service (Organization),
+                        Expert in Profession (Who serving with differently) and Special Contribution (Organization and personality who working behind the industry).
+                    </p>
+                    <button id="read-more-button" onclick="toggleReadMore()">Read More</button>
+                </div>
+
+                <div class="sub-section">
+                    <h3>
+                        <span style="font-size: 28px; color: black;">Who can</span>
+
+                        <span style="font-size: 28px; color: rgb(248,176,21);">Apply</span>
+                    </h3>
+                    <p>
+                        If you are a traveller, explorer, or nomad who loves to go places, capture moments, and explore life through your stories and lenses this award is for you.
+                    </p>
+                    <div class="registration-options">
+                        <div class="registration-option">
+                            <h4>Content Creators</h4>
+                            <a href="register1.html" class="register-button">Register</a>
+                        </div>
+                        <div class="registration-option">
+                            <h4>Participants</h4>
+                            <a href="Register.html" class="register-button">Register</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="award-prime-categories">
+                <h2>Award Prime Categories</h2>
+                <div class="prime-categories">
+                    <div class="category">
+                        <img src="Picture1.png" alt="Category 1">
+                        <h3>Creative Hero</h3>
+                        <p>20 awards will be given to the best travel content creators in 20 different categories</p>
+                    </div>
+                    <div class="category">
+                        <img src="Picture2.png" alt="Category 2">
+                        <h3>Traveler’s Icon
+                        </h3>
+                        <p>10 Award will be given to the Best Travelers in different 10 categories
+                        </p>
+                    </div>
+                    <div class="category">
+                        <img src="Picture3.png" alt="Category 3">
+                        <h3>Best in Service
+                        </h3>
+                        <p>20 Award will be given to the Best Tourism and hospitality service providers in different 20 categories
+                        </p>
+                    </div>
+                    <div class="category">
+                        <img src="Picture4.png" alt="Category 4">
+                        <h3>Expert in Profession
+                        </h3>
+                        <p>05 Award will be given to the expert professional in different 05 categories
+                        </p>
+                    </div>
+                    <div class="category">
+                        <img src="Picture5.png" alt="Category 5">
+                        <h3>Special Contribution
+                        </h3>
+                        <p>05 Award will be given to the 05 best personalities and organizations who contribute to the industry</p>
+
+                    </div>
+
+                </div>
+                <button class="vote-button" onclick="navigateToVotingPage('Traveler’s Icon')">Vote Now</button>
+            </div>
+            <div class="supporting-section">
+                <h2>Supporting by</h2>
+                <div class="supporting-images">
+                    <img src="ictdivision.png" alt="Supporter 1">
+                    <img src="iDEA Logo.png" alt="Supporter 2">
+                    <img src="intilligent.webp" alt="Supporter 3">
+                    <!-- Add more supporter images here -->
+                </div>
+            </div>
+            <div class="info-section">
+                <div class="photo-section">
+                    <img src="tourismpic.png" alt="Location Photo">
+                </div>
+                <div class="info-details">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <img src="location.png" alt="Location Icon">
+                            <span>Ovigo, iDEA Project, ICT Division ICT Tower, Sher E Bangla Nagar, Agargaon, Dhaka-1207</span>
+                        </li>
+                        <li>
+                            <img src="phone.jpg" alt="Phone Icon">
+                            <span>01766341730</span>
+                        </li>
+                        <li>
+                            <img src="email.png" alt="Email Icon">
+                            <span>helloovigo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function navigateToVotingPage(categoryName) {
+            // Use JavaScript to navigate to the voting.html page
+            window.location.href = 'Voting.html';
+        }
+        let isReadMoreVisible = false;
+
+        function toggleReadMore() {
+            const aboutAwardSummary = document.getElementById("about-award-summary");
+            const aboutAwardFull = document.getElementById("about-award-full");
+            const readMoreButton = document.getElementById("read-more-button");
+
+            if (!isReadMoreVisible) {
+                aboutAwardSummary.style.display = "none";
+                aboutAwardFull.style.display = "block";
+                readMoreButton.textContent = "Read Less";
+            } else {
+                aboutAwardSummary.style.display = "block";
+                aboutAwardFull.style.display = "none";
+                readMoreButton.textContent = "Read More";
+            }
+
+            isReadMoreVisible = !isReadMoreVisible;
+        }
+
+        function animateSubSections() {
+            const subSections = document.querySelectorAll('.sub-section');
+            subSections.forEach((subSection) => {
+                subSection.classList.add('animate');
+            });
+        }
+
+        // Add an event listener to trigger the animation when the page loads
+        window.addEventListener('load', animateSubSections);
+
+        function redirectToNominationPage() {
+            window.location.href = "https://docs.google.com/forms/d/1pbco_3HOQmZfr0ZO_uZXtCuw4PK8Xh-PaMVf0RblGTQ/viewform?edit_requested=true"; // Replace with the actual URL of the page you want to navigate to
+        }
+        // Set the date and time to count down to
+        const countDownDate = new Date("September 10, 2023 09:00:00").getTime();
+
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days.toString().padStart(2, '0');
+            document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+
+
+</body>
+
+</html>

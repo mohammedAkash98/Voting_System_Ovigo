@@ -1,0 +1,98 @@
+                            <style>
+                        /* Global Styles */
+                        
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: white margin: 0;
+                            padding: 0;
+                        }
+                        
+                        .container {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 20px;
+                        }
+                        /* Navbar Styles with Background Image */
+                        
+                        .navbar {
+                            background-image: url('backimg.png');
+                            /* Replace with the background image URL */
+                            background-size: cover;
+                            color: #fff;
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                        
+                        .logo {
+                            max-width: 100px;
+                            height: auto;
+                        }
+                        
+                        .nav-options {
+                            margin-top: 10px;
+                        }
+                        
+                        .nav-option {
+                            color: #fff;
+                            text-decoration: none;
+                            margin: 0 20px;
+                            font-weight: bold;
+                        }
+                        /* Benefits Section Styles */
+                        
+                        .benefits-section {
+                            background-color: #fff;
+                            padding: 20px;
+                            margin: 20px auto;
+                            max-width: 100%;
+                            text-align: center;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+                        
+                        .benefits-section h2 {
+                            font-size: 28px;
+                            color: #150751;
+                            /* Change to your preferred header color */
+                            margin-bottom: 20px;
+                        }
+                        
+                        ul {
+                            list-style-type: disc;
+                            /* Use bullets for list items */
+                            padding: 0;
+                        }
+                        
+                        li {
+                            font-size: 20px;
+                            /* Increase font size for benefits */
+                            color: #333;
+                            /* Change to your preferred text color */
+                            margin-bottom: 15px;
+                            text-align: left;
+                        }
+                        /* Register Button Styles */
+                        
+                        .register-button-container {
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+                        
+                        .register-button {
+                            display: inline-block;
+                            padding: 10px 20px;
+                            background-color: #150751;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            transition: background-color 0.3s ease;
+                        }
+                        
+                        .register-button:hover {
+                            background-color: #150751;
+                            /* Change to a contrasting color */
+                            transform: scale(1.05);
+                            /*
+}
+
+</style>

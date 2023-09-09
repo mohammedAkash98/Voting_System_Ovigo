@@ -1,0 +1,690 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        /* Set background color to white */
+    }
+    
+    .navbar {
+        background-color: rgba(29, 15, 92, 0.7);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: 15px;
+        position: relative;
+    }
+    
+    .background-container {
+        background-image: url('backimg.jpeg');
+        /* Replace 'back.jpg' with your background image URL */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        /* Fixed background so it covers the entire page */
+    }
+    
+    .hamburger {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 6px 0;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .logo {
+        width: 120px;
+        /* Set the width of the logo */
+        height: 50px;
+        /* Maintain aspect ratio */
+    }
+    
+    #submitNominationButton {
+        background-color: #4CAF50;
+        /* Green background color */
+        color: white;
+        /* White text color */
+        padding: 10px 20px;
+        /* Padding around the text */
+        border: none;
+        /* No border */
+        border-radius: 5px;
+        /* Rounded corners */
+        cursor: pointer;
+        /* Cursor on hover */
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .countdown p1 {
+        margin: -30px 0;
+        /* Adjust the margin as needed */
+        font-size: 25px;
+        font-weight: bold;
+        /* Move the header 20px above the timer */
+    }
+    
+    .countdown p2 {
+        margin: -30px 0;
+        /* Adjust the margin as needed */
+        font-size: 50px;
+        font-weight: bolder;
+        color: rgb(0, 248, 149);
+        margin-top: 0px;
+    }
+    
+    .countdown p3 {
+        margin: -30px 10;
+        margin-bottom: -35px;
+        /* Adjust the margin as needed */
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        /* Change the font color to your desired color */
+    }
+    /* Style for the button on hover */
+    
+    #submitNominationButton:hover {
+        background-color: #45a049;
+        /* Darker green background color on hover */
+    }
+    
+    .nav-options {
+        margin-top: 10px;
+    }
+    
+    .nav-option {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .categories {
+        display: grid;
+        gap: 20px;
+    }
+    
+    .category {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .options {
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .image-container {
+        position: relative;
+        /* Allows positioning of children elements */
+        width: 100%;
+        /* Ensures the container spans the entire width */
+        max-width: 100%;
+        /* Ensures the container does not exceed its parent's width */
+        text-align: center;
+        /* Adjust margin as needed */
+    }
+    
+    .background-image {
+        background-image: url('backimg.png');
+        /* Replace with your background image URL */
+        background-size: cover;
+        background-position: top;
+        color: white;
+        display: flex;
+        /* Text color on top of the background image */
+        text-align: center;
+        padding: 20px;
+        /* Add padding for content readability */
+    }
+    
+    .centered-image {
+        display: flex;
+        margin: 0 auto;
+        /* Centers the image horizontally */
+        z-index: 1;
+        width: 450px;
+        height: 300px;
+        /* Places the centered image in front of the background */
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .arrow {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.2s;
+    }
+    
+    .collapsed .arrow {
+        transform: rotate(-180deg);
+    }
+    
+    .countdown {
+        text-align: center;
+        margin: 0px;
+        background-color: rgb(29, 15, 92);
+        color: white;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .countdown-timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+    
+    .countdown-item {
+        margin: 0 15px;
+        text-align: center;
+        background-color: rgb(56, 189, 137);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+    
+    .countdown-value {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .timer-header {
+        text-align: center;
+    }
+    
+    .coun .countdown-label {
+        font-size: 14px;
+        color: white;
+    }
+    
+    .login-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+    }
+    
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .form-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    .submit-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .submit-button:hover {
+        background-color: #0056b3;
+    }
+    /* Award Categories section styles */
+    
+    .award-prime-categories {
+        text-align: center;
+        /* Center-align the content */
+    }
+    
+    .prime-categories {
+        display: flex;
+        /* Use flexbox */
+        justify-content: space-between;
+        /* Distribute items evenly */
+        flex-wrap: wrap;
+        /* Allow items to wrap to the next line if necessary */
+        margin-top: 20px;
+        /* Add some margin for spacing */
+    }
+    
+    .category {
+        flex-basis: calc(20% - 10px);
+        /* Adjust the width of each category */
+        margin-right: 10px;
+        /* Add right margin to create spacing between categories */
+        text-align: left;
+        /* Left-align the category content */
+    }
+    
+    @media (max-width: 768px) {
+        .category {
+            flex-basis: calc(50% - 10px);
+            /* 2 categories per row on smaller screens */
+        }
+    }
+    
+    .award-categories {
+        background-color: #fff;
+        padding: 6px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .award-categories h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .award-categories p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+    }
+    /* Media queries for responsive design */
+    
+    @media (max-width: 768px) {
+        .nav-options {
+            display: none;
+        }
+        .logo {
+            max-width: 100px;
+        }
+    }
+    /* Add this CSS to your existing styles */
+    
+    .sub-sections {
+        display: flex;
+        justify-content: space-between;
+        /* To create space between the two sections */
+        flex-wrap: wrap;
+        /* Allow the sections to wrap to the next line if the screen size is small */
+    }
+    
+    .sub-section {
+        width: 48%;
+        /* Each sub-section takes up 48% of the container width with a little space in between */
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+        /* Add background color for better separation */
+    }
+    
+    .sub-section h3 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .sub-section p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+    }
+    
+    .sub-section p {
+        font-size: 18px;
+        /* Adjust the font size as needed */
+        font-family: 'YourCustomFont', sans-serif;
+        /* Replace 'YourCustomFont' with the desired font family */
+        color: #333;
+        /* Change the text color as needed */
+    }
+    /* Initial state for sub-sections */
+    
+    .sub-section {
+        opacity: 0;
+        /* Initially, the sub-sections are invisible */
+        transform: translateX(-100%);
+        /* Initially, move them outside the viewport to the left */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        /* Add smooth transitions */
+    }
+    /* Animation for sub-sections */
+    
+    .sub-section.animate {
+        opacity: 1;
+        /* When the 'animate' class is added, make the sub-sections visible */
+        transform: translateX(0);
+        /* Bring them back to their original position */
+    }
+    /* Initial state for sub-sections */
+    
+    .sub-section {
+        opacity: 0;
+        /* Initially, the sub-sections are invisible */
+        transform: translateX(-100%);
+        /* Initially, move them outside the viewport to the left */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        /* Add smooth transitions */
+    }
+    /* Animation for sub-sections */
+    
+    .sub-section.animate {
+        opacity: 1;
+        /* When the 'animate' class is added, make the sub-sections visible */
+        transform: translateX(0);
+        /* Bring them back to their original position */
+    }
+    
+    .prime-categories {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .category {
+        flex-basis: calc(20% - 20px);
+        /* Adjust the width as needed */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .category img {
+        max-width: 100%;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .category h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .category p {
+        font-size: 14px;
+        color: #555;
+        margin-top: 10px;
+    }
+    /* Style for the "Supporting by" section */
+    
+    .supporting-section {
+        background-color: white;
+        /* Set the background color */
+        padding: 20px;
+        text-align: center;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    
+    .supporting-section h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .supporting-images {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Allow images to wrap to the next line if necessary */
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .supporting-images img {
+        max-width: 100px;
+        /* Set the maximum width for the images */
+        margin: 10px;
+        /* Add spacing between images */
+        border-radius: 8px;
+        /* Add rounded corners to images */
+    }
+    
+    .info-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+        background-color: rgb(13, 7, 19)
+    }
+    
+    .photo-section img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .info-details {
+        flex: 1;
+        padding-left: 20px;
+        color: white;
+    }
+    
+    .info-details h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    li img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    li span {
+        font-size: 18px;
+        color: white;
+    }
+    
+    .registration-options {
+        display: flex;
+        /* Allow items to wrap to the next line on smaller screens */
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .registration-option {
+        flex-basis: calc(50% - 10px);
+        /* Adjust the width of each option */
+        margin-top: 10px;
+    }
+    
+    .register-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #150751;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    
+    .register-button:hover {
+        background-color: #e0a500;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .registration-options {
+            flex-direction: column;
+            /* Change to column for small screens */
+        }
+        .registration-option {
+            flex-basis: auto;
+            /* Allow full width for each option */
+            margin-top: 10px;
+        }
+    }
+    
+    .hidden {
+        display: none;
+    }
+    /* Style the "Read More" button */
+    
+    #read-more-button {
+        background-color: #150751;
+        color: #fff;
+        border-radius: 8px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    #read-more-button:hover {
+        background-color: #e0a500;
+    }
+    
+    @media screen and (max-width: 768px) {
+        /* Adjust font sizes and padding for smaller screens */
+        .navbar {
+            font-size: 14px;
+        }
+        .nav-options {
+            flex-direction: column;
+        }
+        .background-image {
+            background-size: cover;
+        }
+        .centered-image {
+            max-width: 105%;
+        }
+        /* Center align text in countdown section */
+        .countdown p1,
+        .countdown p2,
+        .countdown p3 {
+            text-align: center;
+        }
+        /* Center the countdown timer */
+        .countdown-timer {
+            text-align: center;
+        }
+        /* Adjust font size for countdown items */
+        .countdown-value {
+            font-size: 24px;
+        }
+        .countdown-label {
+            font-size: 14px;
+        }
+        /* Adjust spacing for countdown items */
+        .countdown-item {
+            margin: 5px;
+        }
+        /* Center the "Submit Nomination" button */
+        #submitNominationButton {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Adjust font size for heading */
+        .award-categories h2 {
+            font-size: 24px;
+        }
+        /* Adjust font size for sub-section headings */
+        .sub-section h3 {
+            font-size: 24px;
+        }
+        /* Adjust font size for paragraph text */
+        .sub-section p {
+            font-size: 14px;
+        }
+        /* Center the "Read More" button */
+        #read-more-button {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Adjust font size for award category headings */
+        .award-prime-categories h2 {
+            font-size: 24px;
+        }
+        /* Adjust font size for category headings */
+        .category h3 {
+            font-size: 18px;
+        }
+        /* Adjust font size for category descriptions */
+        .category p {
+            font-size: 14px;
+        }
+        /* Center align supporter images */
+        .supporting-images img {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Adjust font size for contact information */
+        .info-details h3 {
+            font-size: 18px;
+        }
+        .info-details li {
+            font-size: 14px;
+        }
+        /* Center align location photo */
+        .photo-section img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+    .vote-button {
+        background-color: #150751;
+        color: #fff;
+        padding: 10px 20px;
+        height: 45px;
+        font-weight: bold;
+        width: 120px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .vote-button:hover {
+        background-color: #e0a500;
+    }
